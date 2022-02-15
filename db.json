@@ -1,0 +1,54 @@
+{
+  "hello": [
+    {
+      "lang": "C",
+      "code": "#include<stdio.h>\nvoid main( ){\n    printf(\"Hello World\");\n}",
+      "id": 1
+    },
+    {
+      "lang": "Python",
+      "code": "print(\"Hello World\")",
+      "id": 2
+    },
+    {
+      "lang": "php",
+      "code": "<?php\n    echo \"Hello World\";\n?>",
+      "id": 3
+    },
+    {
+      "lang": "JavaScript",
+      "code": "console.log(\"Hello World\");",
+      "id": 4
+    },
+    {
+      "lang": "Java",
+      "code": "class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\"); \n    }\n}",
+      "id": 5
+    },
+    {
+      "lang": "C++",
+      "code": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello World!\";\n    return 0;\n}",
+      "id": 6
+    },
+    {
+      "lang": "ASP.NET",
+      "code": "<%Response. Write( \"HeIIo World\"); %>",
+      "id": 7
+    },
+    {
+      "lang": "A+",
+      "code": "[]<-’Hello World!’",
+      "id": 8
+    },
+    {
+      "lang": "ABAP",
+      "code": "WRITE 'Hello, World!'.",
+      "id": 9
+    },
+    {
+      "lang": "ABC",
+      "code": "WRITE 'Hello, World!'.",
+      "id": 10
+    }
+  ]
+}
