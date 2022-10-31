@@ -4,11 +4,11 @@ import React, { useEffect, useState } from 'react'
 
 function CodeTable() {
     const arr = Array.from(Array(26).keys())
-    const [char, setChar] = useState('a')
+    const [char, setChar] = useState("")
     const [data, setData] = useState(null)
     useEffect(()=>{
         console.log('Get Hello World from: ', char)
-        axios.get("http://localhost:3002/hello").then((res)=>{
+        axios.get(`http://localhost:3002/hello`).then((res)=>{
             setData(res)
             console.log("Res: ", res)
         })
@@ -35,6 +35,7 @@ function CodeTable() {
           (data==null)?'Loading':
           data.data.map((item)=>{
               return (
+                  char===""?
                   <>
                             <Tr>
                             <Td>{item.id}</Td>
@@ -42,6 +43,14 @@ function CodeTable() {
                             <Td>{item.code}</Td>
                             </Tr>
                   </>
+                  :char===item.lang[0].toLowerCase()?
+                  <>
+                            <Tr>
+                            <Td>{item.id}</Td>
+                            <Td>{item.lang}</Td>
+                            <Td>{item.code}</Td>
+                            </Tr>
+                  </>:""
               )
             })
         }

@@ -10,11 +10,11 @@ function Navbar() {
     }
   return (
     <>
-        <Box boxSize='sm' className='navBox' onClick={up}>
-            <Link to='/'>
+        <Box boxSize='sm' className='navBox' >
+            {/* <Link to='/'> */}
               <Image src='/images/logo.png' alt='code' boxSize='100px' />
-              <Heading marginTop='-10vh' marginLeft='-72vw'>Hello World</Heading>
-            </Link>
+              <Heading marginTop='-10vh' marginLeft='-72vw' ><span onClick={up} style={{cursor: "pointer"}}>Hello World</span></Heading>
+            {/* </Link> */}
             <Box marginTop='-6vh' className='navSearch' onClick={onOpen}>
                 <Search2Icon onClick={onOpen} />
             </Box>
